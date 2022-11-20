@@ -1,8 +1,51 @@
 .body-destaque{
-  padding-top: 12%;
+  padding-top: 10rem;
 }
 
 .formatting-text h4{
   font-weight: 600;
   font-size: 56px;
 }
+
+/* Rede social formatação */
+
+.rede-social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.rede-social li{
+  list-style: none;
+}
+
+.mobile-social{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+
+.mobile-social{
+
+  list-style: none;
+}
+
+.mobile-social{
+  display: none;
+}
+/* Rede social media queries */
+@media(max-width: 540px) {
+
+  .rede-social{
+    display: none;
+  }
+
+  .mobile-social{
+    display: flex;
+    margin: 10px 0px;
+  }
+}
+
+

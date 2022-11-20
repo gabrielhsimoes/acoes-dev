@@ -11,3 +11,10 @@
   padding: 7px;
   font-size: 13px;
 }
+
+@media(max-width: 768px) {
+
+  .text-sobre{
+    padding-top: 3rem;
+  }
+}

@@ -1,6 +1,7 @@
 /* Imagem de fundo - Home */
 .bg-image{
   background-image: url(../assets/imgs/bg-photo.png);
+  background-repeat: repeat-x;
 }
 
 /* Navegação Header menu */
@@ -85,7 +86,7 @@
 
 /* Responsive menu mobile */
 
-@media (max-width: 540px) {
+@media (max-width: 767px) {
 
   .menu-mobile{
     display: initial;
