@@ -2,3 +2,12 @@
   background-color: #4E2F8F;
   padding: 15px 0px;;
 }
+
+.form-group{
+  margin: 1rem 0px;
+}
+
+.container form{
+  width: 85%;
+  margin: auto;
+}
