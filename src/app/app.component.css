@@ -91,6 +91,7 @@
   .menu-mobile{
     display: initial;
     margin-left: auto;
+    font-size: 20px;
   }
 
   .menu{
