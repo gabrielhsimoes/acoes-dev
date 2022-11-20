@@ -17,7 +17,7 @@
 
         <!-- Menu mobile -->
 
-        <li class="menu-mobile" #button (click)="toggleMenu()">
+        <li class="menu-mobile" (click)="toggleMenu()">
           <i class='bx bx-menu'></i>
         </li>
 
@@ -47,7 +47,7 @@
   </nav>
 
 
-    <ul class="menu-mbl fixed-top" [style.display]="isMenuOpen == true ? 'block': 'none'">
+    <ul class="menu-mbl fixed-top" *ngIf="isMenuOpen" @openMobile>
       <li><a href="#home">Home</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#experiencia">Experiência</a></li>
