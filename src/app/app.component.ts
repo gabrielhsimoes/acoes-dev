@@ -8,17 +8,20 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit{
 
-  isMenuOpen = true;
+  isMenuOpen = false;
 
   ngOnInit() {
 
     AOS.init()
     window.addEventListener('load', AOS.refresh)
+
   }
 
   toggleMenu(): void{
     this.isMenuOpen = !this.isMenuOpen;
     console.log(this.isMenuOpen);
+
+
   }
 
 }

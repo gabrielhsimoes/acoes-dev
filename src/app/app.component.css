@@ -53,7 +53,34 @@
 
 .menu-mbl {
   display: block;
-  border: 1px solid aquamarine;
+
+  background-color: #0B1029;
+  list-style: none;
+  top: 4rem;
+  padding: 0px;
+}
+
+.menu-mbl.active{
+  top: 8rem;
+  background-color: antiquewhite;
+}
+
+
+.menu-mbl li{
+  padding: 1rem;
+  border-left: 2px solid #687BE7;
+  margin: 5px;
+
+}
+
+.menu-mbl li:hover{
+  background-color: #687BE7;
+  transition: 0.5s;
+}
+
+.menu-mbl li a{
+  color: white;
+  text-decoration: none;
 }
 
 /* Responsive menu mobile */

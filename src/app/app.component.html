@@ -23,7 +23,7 @@
 
 
         <!-- Menu items -->
-        <ul class="menu" *ngIf="isMenuOpen;else mobile">
+        <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#experiencia">Experiência</a></li>
@@ -46,15 +46,15 @@
     </div>
   </nav>
 
-  <ng-template #mobile>
-    <ul class="menu-mbl">
+
+    <ul class="menu-mbl fixed-top" [style.display]="isMenuOpen == true ? 'block': 'none'">
       <li><a href="#home">Home</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#experiencia">Experiência</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
-  </ng-template>
+
 
 
 <div class="container" id="home">
