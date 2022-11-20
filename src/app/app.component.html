@@ -1,41 +1,60 @@
-<!-- Header menu start -->
+
+<!-- Background Image Header -->
 <div class="bg-image">
 
+
+  <!-- Menu Navbar -->
+
   <nav class="fixed-top" style="background-color: #0B1029;">
-    <div class="container" style="border: 1px solid green;">
+    <div class="container">
 
-      <div class="row align-items-center justify-content-between" style="margin: 5px;">
+      <ul class="nav-header" style="list-style-type: none;">
 
-        <div class="col-sm-3">
+        <!-- Logo principal -->
+        <li class="logo">
           <img src="../assets/imgs/logo-principal.svg" alt="Logo Ações Dev" width="120">
-        </div>
+        </li>
 
-        <div class="button-menu col-sm-2">
+        <!-- Menu mobile -->
+
+        <li class="menu-mobile" #button (click)="toggleMenu()">
           <i class='bx bx-menu'></i>
-        </div>
+        </li>
 
 
-        <div class="col-sm-4 menu align-items-center">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#experiencia">Experiência</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
+        <!-- Menu items -->
+        <ul class="menu" *ngIf="isMenuOpen;else mobile">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
 
-        </div>
-
-        <div class="contato-btn col-sm-3">
-          <button class="btn"><a href="#contato">
-            Contato
-          </a>
+        <!-- Button Contato -->
+        <li>
+          <button class="btn btn-contato">
+            <a href="#contato">
+              Contato
+            </a>
           </button>
-        </div>
+        </li>
 
-      </div>
+      </ul>
+
+
+
     </div>
-
   </nav>
+
+  <ng-template #mobile>
+    <ul class="menu-mbl">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </ng-template>
 
 
 <div class="container" id="home">

@@ -1,28 +1,35 @@
+/* Imagem de fundo - Home */
 .bg-image{
   background-image: url(../assets/imgs/bg-photo.png);
 }
 
-.menu ul{
-  list-style-type: none;
-  text-decoration: none;
-  padding: 0px;
+/* Navegação Header menu */
+.nav-header{
   display: flex;
-  justify-content: space-around;
+  padding: 5px;
   margin: 0px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu ul li a{
-  text-decoration: none;
-  color: white;
-}
-
-.contato-btn{
+/* Menu items formatação */
+.menu{
   display: flex;
+  padding: 0px;
+  list-style-type: none;
+  width: 25rem;
+  justify-content: space-between;
 }
 
-.contato-btn button{
-  color: white;
-  margin-left: auto;
+.menu li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+/* Button Contato Menu */
+.btn-contato{
   background: linear-gradient(180deg, #1F3EAD 0%, #687BE7 100%);
   border-radius: 10px;
   border: none;
@@ -31,27 +38,39 @@
   padding: 5px;
   font-size: 14px;
 }
-.contato-btn button a{
+
+.btn-contato a{
   color: white;
   text-decoration: none;
 }
 
-.button-menu{
+/* Icon mobile menu */
+
+.menu-mobile{
   display: none;
 }
 
-@media (max-width: 960px) {
 
-.menu{
-  display: none;
-}
-
-.button-menu{
-  display: inline;
-  margin-left: auto;
+.menu-mbl {
+  display: block;
+  border: 1px solid aquamarine;
 }
 
-.contato-btn{
-  display: none;
+/* Responsive menu mobile */
+
+@media (max-width: 540px) {
+
+  .menu-mobile{
+    display: initial;
+    margin-left: auto;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .btn-contato{
+    display: none;
+  }
 }
-}
+
