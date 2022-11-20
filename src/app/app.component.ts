@@ -8,7 +8,7 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    fadeInDownBigOnEnterAnimation(),
+    fadeInDownBigOnEnterAnimation({ duration: 500 }),
     fadeOutUpBigOnLeaveAnimation()
   ] //matriz onde declara as animações
 })
