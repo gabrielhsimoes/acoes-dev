@@ -12,6 +12,11 @@
   font-size: 13px;
 }
 
+.button-cv a{
+  color: white;
+  text-decoration: none;
+}
+
 @media(max-width: 768px) {
 
   .text-sobre{
