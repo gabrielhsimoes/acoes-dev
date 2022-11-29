@@ -6,6 +6,15 @@
   background: #00000033;
   padding: 20px;
   margin-bottom: 2rem;
+  transition: box-shadow 0.3s 0s ease-out;
+}
+
+.div-bg-exp:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 3px 8px 14px 7px rgba(0,0,0,0.4);
+  -moz-box-shadow: 3px 8px 14px 7px rgba(0,0,0,0.4);
+  box-shadow: 6px 7px 14px 2px rgba(0,0,0,0.4);
+  transition: box-shadow 0.3s 0s ease-out;
 }
 
 .bloco-expe{

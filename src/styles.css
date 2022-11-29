@@ -11,10 +11,17 @@ body{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
 }
 
 p{
   text-align: justify;
+}
+
+.btn-purple{
+  background: linear-gradient(169deg, #9575cd 0%, #283593 100%);
+  color: white !important;
+  border: none !important;
+
 }
